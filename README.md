@@ -11,13 +11,30 @@
 
 ## Scrum
 
+### 2nd Sprint
+#### Goals
+- [ ] Sort classes and students with `Array.sort()`
+- [ ] [Modals](https://getbootstrap.com/docs/4.4/components/modal/) with [forms](https://getbootstrap.com/docs/4.4/components/forms/)
+- [ ] Style the "add button"
+- [ ] Think about the admin interface
+- [ ] Think about Top 3 Students Interface
+- [ ] Improve code
+
+**BJS-APP**
+- [ ] Edit classes dialog
+- [ ] Switch page via state
+- [ ] Add results page
+
+**BJS-API**
+- [ ] Rebase add view branch onto master
+
 ### 1st Sprint
 #### Goals
 **BJS-WEB**
 - [ ] Sort classes and students with `Array.sort()`
-- [ ] Edit student function
-- [ ] Remove student function
-- [ ] Add students function
+- [x] Edit student function
+- [x] Remove student function
+- [x] Add students function
 - [ ] [Modals](https://getbootstrap.com/docs/4.4/components/modal/) with [forms](https://getbootstrap.com/docs/4.4/components/forms/)
 - [ ] Style the "add button"
 
