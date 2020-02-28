@@ -1,0 +1,8 @@
+[submodule "bjs-api"]
+	path = bjs-api
+	url = https://github.com/bjs-org/bjs-api.git
+	branch = master
+[submodule "bjs-web"]
+	path = bjs-web
+	url = https://github.com/bjs-org/bjs-web.git
+	branch = master
