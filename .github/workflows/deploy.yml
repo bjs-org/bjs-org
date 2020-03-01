@@ -1,0 +1,25 @@
+name: Deploy
+
+on: 
+  push:
+    branches: master
+  repository_dispatch:
+    
+jobs:
+  deploy-balena:
+    if: github.event_name != 'repository_dispatch' || github.event.action == 'docker-deploy'
+    name: Deploy to Balena Cloud
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Checkout submodules
+        shell: bash
+        run: |
+          auth_header="$(git config --local --get http.https://github.com/.extraheader)"
+          git submodule sync --recursive
+          git -c "http.extraheader=$auth_header" -c protocol.version=2 submodule update --remote --init --force --recursive --depth=1
+      - name: Balena Push
+        uses: theaccordance/balena-push@v1.0.0
+        with:
+          api-token: ${{secrets.BALENA_API_TOKEN}}
+          application-name: ${{secrets.BALENA_APPLICATION_NAME}}
