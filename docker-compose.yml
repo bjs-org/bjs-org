@@ -1,0 +1,25 @@
+version: '2'
+
+volumes:
+  db-data: {}
+
+services:
+  api:
+    build: bjs-api/api
+    depends_on:
+      - db
+    ports:
+      - 8080:8080
+  db:
+    build: bjs-api/db
+    volumes:
+      - db-data:/var/lib/postgresql/10/main
+    ports:
+      - 5432:5432
+  nginx:
+    build: .
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - api
