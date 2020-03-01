@@ -1,6 +1,12 @@
-# Organization
+![Deploy](https://github.com/bjs-org/bjs-org/workflows/Deploy/badge.svg)
+# BJS-ORG
+BJS-ORG combines all server-site project and repositories (that means API and Website).
+This show the current state of deployment.
+The repositories README.md is also used as central planing and documenting tool.
 
-## Getting started with BJS-WEB
+## Organization
+
+### Getting started with BJS-WEB
 * [Download Visual Studio Code](https://code.visualstudio.com/)
 * Git
 * Create folder
@@ -9,10 +15,10 @@
 * Open with VSCode
 * Click on "master" (bottom,left) and select "origin/feature/api-connection"
 
-## Scrum
+### Scrum
 
-### 3rd Sprint
-#### Goals 
+#### 3rd Sprint
+##### Goals 
 - [ ] [Modals](https://getbootstrap.com/docs/4.4/components/modal/) with [forms](https://getbootstrap.com/docs/4.4/components/forms/)
 - [ ] Modal Add Student -> wrap with [form-group class](https://getbootstrap.com/docs/4.4/components/forms/#form-groups)
 - [ ] Admin Interface
@@ -28,8 +34,8 @@
 **BJS-API**
 - [ ] Interface for reading csv-files 
 
-### 2nd Sprint
-#### Goals
+#### 2nd Sprint
+##### Goals
 - [x] (only students) Sort classes and students with `Array.sort()`
 - [ ] [Modals](https://getbootstrap.com/docs/4.4/components/modal/) with [forms](https://getbootstrap.com/docs/4.4/components/forms/)
 - [x] Style the "add button" -> bal
@@ -45,8 +51,8 @@
 **BJS-API**
 - [x] Rebase add view branch onto master
 
-### 1st Sprint
-#### Goals
+#### 1st Sprint
+##### Goals
 **BJS-WEB**
 - [ ] Sort classes and students with `Array.sort()`
 - [x] Edit student function
